@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="./images/dotdot-logo.svg">
+    <title>DotDot</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./images/dotdot.png" alt="DotDot - Logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#activities">Minhas Atividades</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre a DotDot.Co</a>
+                    </li>
+                    <li>
+                        <a href="#about-art">Sobre o Fundador</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="activities">
+        <div class="container">
+            <div class="new-activity">
+                <div>
+                    <h2>Nova Atividade</h2>
+                    <form>
+                        <input type="text" placeholder="Nome da Atividade" required>
+                        <input type="email" placeholder="E-mail do Atribuido" required>
+                        <label for="end-date" id="end-date">Data de Conclusão: </label>
+                        <input type="date" id="end-date" placeholder="Data de Conclusão" required>
+                        <label for="end-time" id="end-time">Hora de Conclusão: </label>
+                        <input type="time" id="end-time" placeholder="Data de Conclusão" required>
+                        <textarea placeholder="Descrição da Atividade"></textarea>
+                        <button type="submit">Registrar</button>
+                    </form>
+                </div>
+                <div class="container">
+                    <div class="activity">
+                        <h2>Atividades</h2>
+
+                        <h3>A Fazer:</h3>
+                        <div class="todo-task">
+                            <button type="button" class="collapsible">Adicionar Foto ao Perfil do LinkedIn</button>
+                            <div class="content">
+                                <div class="task-infos">
+                                    <label>E-mail do Atribuido: </label>
+                                    <p>joaozinho@email.com</p>
+                                    <label>Data de Conclusão: </label>
+                                    <p>01/01/2024</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <button type="submit" class="complete-task-button">Concluído</button>
+                            </div>
+                        </div>
+                        <div class="complete-activities">
+                            <h3>Atividades Concluídas:</h3>
+                            <button type="button" class="collapsible">Criar a primeira landpage</button>
+                            <div class="content">
+                                <div class="task-infos">
+                                    <label>E-mail do Atribuido: </label>
+                                    <p>joaozinho@email.com</p>
+                                    <label>Data de Conclusão: </label>
+                                    <p>01/01/2024</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button type="button" class="collapsible">Estudar HTML e CSS</button>
+                            <div class="content">
+                                <div class="task-infos">
+                                    <label>E-mail do Atribuido: </label>
+                                    <p>joaozinho@email.com</p>
+                                    <label>Data de Conclusão: </label>
+                                    <p>01/01/2024</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button type="button" class="collapsible">Realizar testes em JavaScript</button>
+                            <div class="content">
+                                <div class="task-infos">
+                                    <label>E-mail do Atribuido: </label>
+                                    <p>joaozinho@email.com</p>
+                                    <label>Data de Conclusão: </label>
+                                    <p>01/01/2024</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div>
+                <h2>Sobre a DotDot.co</h2>
+                <p>
+                    A DotDot.Co é uma empresa de gestão de atividades e produtividade, aqui, você pode anotar as
+                    suas atividades e conseguir resultados mais expressivos no seu cotidiano.
+                    <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam sint commodi perferendis itaque
+                    nostrum explicabo, deserunt consequuntur exercitationem necessitatibus quia voluptatibus ullam
+                    temporibus, ipsum a qui, sed eum non dignissimos.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe possimus explicabo
+                    suscipit adipisci eligendi ipsum, fugit ducimus odit commodi accusantium, obcaecati ut quibusdam,
+                    debitis at rem necessitatibus similique quidem!
+                    <br><br>
+                    A ideia da solução, surgiu de <a href="https://www.linkedin.com/in/artnomic">Arthur Berson</a>
+                </p>
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about-art" id="about-art">
+                <h2>Sobre o Fundador da DotDot.co</h2>
+                <div class="container">
+                    <p>
+                        Arthur Berson, um apaixonado por tecnologia e inovação, que busca transformar o mundo com
+                        soluções que facilitam e empoderam as pessoas. Sou formado em Análise e Desenvolvimento de
+                        Sistemas
+                        na Universidade Paulista, onde aprendi conceitos e ferramentas fundamentais para o meu campo de
+                        atuação. <br><br>
+
+                        Atualmente, trabalho como Especialista Técnico na idwall, uma empresa que oferece soluções em
+                        identidade digital para diversos segmentos e clientes. Nessa função, eu utilizo meus
+                        conhecimentos
+                        em Java, JavaScript, SQL, MongoDB, API's, integrações, e monitoramento de dados para auxiliar os
+                        clientes internos e externos com as demandas técnicas e operacionais dos produtos e serviços da
+                        empresa. Além disso, eu contribuo para o desenvolvimento e manutenção de scripts, dashboards, e
+                        conteúdos educacionais para a melhor experiência e satisfação dos usuários.<br><br>
+
+                        Meu objetivo é continuar me aprimorando e me desafiando como profissional, e fazer parte de
+                        projetos
+                        que geram impacto positivo na sociedade. Por isso, estou sempre buscando aprender novas
+                        tecnologias,
+                        ferramentas, e metodologias que me ajudam a resolver problemas complexos e a entregar soluções
+                        de
+                        qualidade.
+                    </p>
+                    <img src="./images/artNoMic.jpeg" alt="Foto do Art">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; DotDot.Co - Todos os direitos reservados - 2023
+            </p>
+        </div>
+        <div class="social-links-div">
+            <h2>Nos acompanhe</h2>
+            <ul class="social-links">
+                <li>
+                    <a href="#" title="Siga-nos no Instagram">
+                        <img src="./images/instagram.png" alt="Logo do Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Siga-nos no GitHub">
+                        <img src="./images/github.png" alt="Logo do GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Siga-nos no TikTok">
+                        <img src="./images/tiktok.png" alt="Logo do TikTok">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="Siga-nos no X">
+                        <img src="./images/x_twitter.png" alt="Logo do X">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
