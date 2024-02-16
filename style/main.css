@@ -177,7 +177,7 @@ section h3 {
     border-color: #91a1cc;
 }
 
-.task-infos {
+.task-infos, .new-task-infos {
     padding: 16px 0;
 }
 

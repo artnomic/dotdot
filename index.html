@@ -36,14 +36,14 @@
             <div class="new-activity">
                 <div>
                     <h2>Nova Atividade</h2>
-                    <form>
-                        <input type="text" placeholder="Nome da Atividade" required>
-                        <input type="email" placeholder="E-mail do Atribuido" required>
+                    <form id="form-activity">
+                        <input type="text" placeholder="Nome da Atividade" required id="activity-name">
+                        <input type="email" placeholder="E-mail do Atribuido" required id="activity-email">
                         <label for="end-date" id="end-date">Data de Conclusão: </label>
-                        <input type="date" id="end-date" placeholder="Data de Conclusão" required>
+                        <input type="date" id="activity-end-date" placeholder="Data de Conclusão" required>
                         <label for="end-time" id="end-time">Hora de Conclusão: </label>
-                        <input type="time" id="end-time" placeholder="Data de Conclusão" required>
-                        <textarea placeholder="Descrição da Atividade"></textarea>
+                        <input type="time" id="activity-end-time" placeholder="Data de Conclusão" required>
+                        <textarea placeholder="Descrição da Atividade" id="activity-description"></textarea>
                         <button type="submit">Registrar</button>
                     </form>
                 </div>
@@ -52,62 +52,34 @@
                         <h2>Atividades</h2>
 
                         <h3>A Fazer:</h3>
+
                         <div class="todo-task">
-                            <button type="button" class="collapsible">Adicionar Foto ao Perfil do LinkedIn</button>
-                            <div class="content">
-                                <div class="task-infos">
-                                    <label>E-mail do Atribuido: </label>
-                                    <p>joaozinho@email.com</p>
-                                    <label>Data de Conclusão: </label>
-                                    <p>01/01/2024</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <button type="submit" class="complete-task-button">Concluído</button>
-                            </div>
                         </div>
+
                         <div class="complete-activities">
                             <h3>Atividades Concluídas:</h3>
-                            <button type="button" class="collapsible">Criar a primeira landpage</button>
-                            <div class="content">
-                                <div class="task-infos">
-                                    <label>E-mail do Atribuido: </label>
-                                    <p>joaozinho@email.com</p>
-                                    <label>Data de Conclusão: </label>
-                                    <p>01/01/2024</p>
+                            <div id="complete-task">
+                                <button type="button" class="collapsible">Criar a primeira landpage</button>
+                                <div class="content">
+                                    <div class="task-infos">
+                                        <label>E-mail do Atribuido: </label>
+                                        <p>joaozinho@email.com</p>
+                                        <label>Data de Conclusão: </label>
+                                        <p>01/01/2024</p>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <button type="button" class="collapsible">Estudar HTML e CSS</button>
-                            <div class="content">
-                                <div class="task-infos">
-                                    <label>E-mail do Atribuido: </label>
-                                    <p>joaozinho@email.com</p>
-                                    <label>Data de Conclusão: </label>
-                                    <p>01/01/2024</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                            <button type="button" class="collapsible">Realizar testes em JavaScript</button>
-                            <div class="content">
-                                <div class="task-infos">
-                                    <label>E-mail do Atribuido: </label>
-                                    <p>joaozinho@email.com</p>
-                                    <label>Data de Conclusão: </label>
-                                    <p>01/01/2024</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
     <section id="about">
         <div class="container">
@@ -194,23 +166,8 @@
             </ul>
         </div>
     </footer>
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-    </script>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
